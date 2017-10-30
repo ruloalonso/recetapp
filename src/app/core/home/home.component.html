@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <img style="float: right" src="http://www.albertochicote.com/dx-content/themes/albertochicote/images/cbcr-pj.png">
+      <h1>Bienvenido a RecetApp!</h1>
+      <h3 *ngIf="!authService.isAuthenticated()">Haz Login para acceder a tus recetas y tu lista de la compra personalizadas</h3>
+      <h3 *ngIf="authService.isAuthenticated()">Parece ser que ya te has logueado!</h3>
+      <small style="float: right">Chicote recomienda RecetApp</small>
+    </div>
+  </div>
+</div>
+
